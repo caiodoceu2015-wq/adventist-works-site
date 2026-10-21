@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cambria Arena 3D</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html, body {
+      margin: 0;
+      width: 100%;
+      height: 100%;
+      background: #031821;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .panel {
+      text-align: center;
+      padding: 30px 40px;
+      border: 1px solid #49d4ff;
+      border-radius: 14px;
+      background: rgba(0, 0, 0, 0.28);
+      box-shadow: 0 0 24px rgba(73, 212, 255, 0.28);
+      min-width: 320px;
+    }
+
+    h1 {
+      margin: 0 0 16px;
+      font-size: 2rem;
+      color: #d9faff;
+    }
+
+    p {
+      margin: 0;
+      font-size: 1rem;
+      color: #cfeef5;
+    }
+
+    button {
+      margin-top: 18px;
+      padding: 12px 22px;
+      border: none;
+      border-radius: 10px;
+      background: linear-gradient(135deg, #00d5ff, #7af0ff);
+      color: #062b37;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      box-shadow: 0 8px 18px rgba(0, 213, 255, 0.35);
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 12px 22px rgba(0, 213, 255, 0.45);
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h1>Cambria Arena 3D</h1>
+    <p>Jogo carregado com sucesso.</p>
+    <button onclick="window.location.href='/admin'">Abrir área secreta</button>
+  </div>
+
+  <script src="/game-script.js"></script>
+</body>
+</html>
